@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>About Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-box {
+      animation: slideIn 1.5s ease-in-out;
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  
+
+  <nav>
+ <a class="active" href="index.html" title="Home"><i class="fa fa-home fa-2x"></i></a>
+  <a href="forecast.html" title="Forecast"><i class="fa fa-cloud fa-2x"></i></a>
+  <a href="about.html" title="About"><i class="fa fa-info-circle fa-2x"></i></a>
+  <a href="alerts.html" title="Alerts"><i class="fa fa-bell fa-2x"></i></a>
+  <a href="contact.html" title="Contact"><i class="fa fa-envelope fa-2x"></i></a>
+</nav>
+  <div class="container">
+    <div class="card about-box">
+      <h2>🌍 About Weather Forecasting</h2><br>
+      <p>Weather forecasting is the science of predicting atmospheric conditions using satellite data, radars, and computer models.</p>
+      <p>Forecasts help us prepare for rain, storms, and extreme weather conditions.</p><br>
+      <p><b>Fun Fact:</b> The highest temperature ever recorded was 56.7°C in Death Valley, USA 🌡.</p>
+    </div>
+  </div>
+
+  <footer>© 2025 Weather Forecasting Site</footer>
+</body>
+</html>

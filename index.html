@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+<!-- Left Half Overlay -->
+<div id="myNav" class="overlay" onclick="closeOnOutside(event)">
+  <span class="closebtn" onclick="closeNav()">×</span>
+
+  <div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="mySlides">https://ima
+      <img src="r.jpg" alt="Rainy Weather">
+      <div class="caption">🌧 Rainy Weather</div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="mySlides">
+      <img src="https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=1200&q=80" alt="Clear Sky">
+      <div class="caption">☀️ Clear Sky</div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="mySlides">
+      <img src="s.jpg" alt="Snowy Day">
+      <div class="caption">❄️ Snowy Day</div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="mySlides">
+      <img src="lightning-bolts.jpg" alt="lighting">
+      <div class="caption">🌩️ lighting</div>
+    </div>
+  </div>
+</div>
+
+  <!-- Background Animations -->
+  
+<nav class=>
+
+<button class="open-btn" onclick="openNav()">☰</button>
+  <a class="active" href="index.html" title="Home"><i class="fa fa-home fa-2x"></i></a>
+  <a href="forecast.html" title="Forecast"><i class="fa fa-cloud fa-2x"></i></a>
+  <a href="about.html" title="About"><i class="fa fa-info-circle fa-2x"></i></a>
+  <a href="alerts.html" title="Alerts"><i class="fa fa-bell fa-2x"></i></a>
+  <a href="contact.html" title="Contact"><i class="fa fa-envelope fa-2x"></i></a>
+</nav><br><br>
+
+
+<h1>HorizonX</h1>
+  <div class="container">
+    <div class="card">
+      <h2>🌦 Weather Search</h2>
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">Get Current Weather</button>
+      <button onclick="getForecast()">Get 5-Day Forecast</button>
+
+      <!-- Results -->
+      <div id="weatherResult"></div>
+      <div id="forecastResult"></div>
+    </div>
+  </div>
+
+  <footer>© 2025 Weather Forecasting Site</footer>
+  <script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Weather Alerts</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .alert {
+      background: rgba(255,0,0,0.3);
+      border: 2px solid red;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+   
+  </style>
+</head>
+<body>
+  
+  <div class="rain" style="left:20%; animation-delay:0s;"></div>
+  <div class="rain" style="left:40%; animation-delay:0.2s;"></div>
+  <div class="rain" style="left:60%; animation-delay:0.4s;"></div>
+  <div class="rain" style="left:80%; animation-delay:0.6s;"></div>
+
+  <nav>
+ <a class="active" href="index.html" title="Home"><i class="fa fa-home fa-2x"></i></a>
+  <a href="forecast.html" title="Forecast"><i class="fa fa-cloud fa-2x"></i></a>
+  <a href="about.html" title="About"><i class="fa fa-info-circle fa-2x"></i></a>
+  <a href="alerts.html" title="Alerts"><i class="fa fa-bell fa-2x"></i></a>
+  <a href="contact.html" title="Contact"><i class="fa fa-envelope fa-2x"></i></a>
+</nav>
+  
+
+  <div class="container">
+    <div class="card">
+      <h2>⚠ Weather Alerts</h2>
+      <div class="alert">🔴 Heavy Rain expected in Chennai tomorrow. Stay indoors if possible!</div>
+      <div class="alert">🔴 Cyclone warning near coastal Tamil Nadu. Be cautious ⚡</div>
+    </div>
+  </div>
+  <marquee>⚠️Severe Weather Alert:Stay Safe🧷</marquee>
+
+  <footer>© 2025 Weather Forecasting Site</footer>
+</body>
+</html>
